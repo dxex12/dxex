@@ -9,10 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Planned
-- **DXEX11 Core**: Direct3D 11 to Direct3D 12 translation engine preview.
-- **Enhanced State Deduplication**: Extended PSO state grouping for reduced memory overhead in heavily modded titles.
-- **DXVK like Config Option**: Extended config option profiles for legacy mod frameworks (ENB, ReShade, SKSE).
+### Fixed
+- **Save Game Freeze & Command List Crash**:
+  - Added native Texture $\leftrightarrow$ Buffer copies via D3D12 placed footprints in the shared translation layer (`ResourceCopyRegion`).
+  - Fixed D3D12 error `ID=854` (dimension limit) and command list fault during `GetRenderTargetData` thumbnail captures.
+  - Added `D3D12_HEAP_TYPE_READBACK` support for staging buffers and enforced 512-byte subresource placement alignment.
 
 ---
 

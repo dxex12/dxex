@@ -59,6 +59,14 @@ DXEX bridges classic and modern PC titles to the Direct3D 12 runtime with ultra-
 
 ---
 
+## 🗺️ Roadmap & Planned Features
+
+* **DXEX11 Core**: Direct3D 11 to Direct3D 12 translation engine preview.
+* **Enhanced State Deduplication**: Extended PSO state grouping for reduced memory overhead in heavily modded titles.
+* **DXVK-like Configuration Options**: Extended runtime configuration profiles for legacy mod frameworks (ENB, ReShade, SKSE).
+
+---
+
 ## 🐛 Submitting Issues & Compatibility Reports
 
 Use the [GitHub Issues tab](../../issues) to report bugs, visual artifacts, crashes, or performance regressions.
