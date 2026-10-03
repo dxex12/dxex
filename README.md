@@ -1,11 +1,12 @@
 # DXEX — DirectX Extended
 
-[![License: Proprietary / Closed Source](https://img.shields.io/badge/License-Proprietary%20%2F%20Closed%20Source-red.svg)](https://github.com)
+[![License: Proprietary / Closed Source](https://img.shields.io/badge/License-Proprietary%20%2F%20Closed%20Source-red.svg)](LICENSE)
 [![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com)
 [![Platform: Windows 10 / 11](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-blue.svg)](https://github.com)
+[![Release: v0.2.0](https://img.shields.io/badge/Release-v0.2.0-blue.svg)](CHANGELOG.md)
 [![Target API: Direct3D 12](https://img.shields.io/badge/Target%20API-Direct3D%2012-orange.svg)](https://github.com)
 
-**DXEX** (standing for **Direct X Extended**) is a high-performance graphics translation layer suite designed to translate legacy and modern Microsoft DirectX graphics APIs directly to **native Direct3D 12 (D3D12)** on Windows.
+**DXEX** (standing for **Direct X Extended**) is a high-performance graphics translation layer suite designed to translate legacy and modern Microsoft DirectX graphics APIs directly to **native Direct3D 12 (D3D12)** on Windows. Developed and maintained by **Rohit Kumar**.
 
 > [!IMPORTANT]
 > **Repository Purpose & Licensing Notice**:  
@@ -95,6 +96,14 @@ To help us diagnose and fix issues quickly, please provide:
 * **Non-Affiliation**: DXEX is an independent, third-party software project and is **not** affiliated, associated, authorized, endorsed by, or in any way officially connected with **Microsoft Corporation**, or any of its subsidiaries or affiliates. The official Microsoft website can be found at [https://www.microsoft.com](https://www.microsoft.com).
 * **Trademarks**: "DirectX", "Direct3D", "D3D", "Windows", and their respective logos and marks are registered trademarks of Microsoft Corporation in the United States and/or other countries.
 * **Nominative Fair Use**: All product names, logos, trademarks, game titles, and registered trademarks mentioned or referenced within this repository are the property of their respective owners. Any reference to these marks or names is done strictly for **identification, technical description, compatibility reporting, and nominative fair use** purposes. DXEX makes no claim of ownership or partnership with respect to any third-party intellectual property.
+
+---
+
+## 👨‍💻 Author & Maintainer
+
+* **Author**: Developed and maintained by **Rohit Kumar**.
+* **Project**: DXEX (DirectX Extended).
+* **Feedback & Support**: Please use the [GitHub Issues](../../issues) tab for bug reports, logs, and compatibility testing feedback.
 
 ---
 

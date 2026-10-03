@@ -1,0 +1,33 @@
+PROPRIETARY AND CLOSED SOURCE LICENSE AGREEMENT
+
+Copyright (c) 2026 Rohit Kumar. All Rights Reserved.
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY.
+
+This repository and any binary releases, software, documentation, and associated files distributed under or alongside the DXEX ("DirectX Extended") project (collectively, the "Software") are proprietary.
+
+1. PROPRIETARY RIGHTS & OWNERSHIP
+The Software, including but not limited to its architecture, algorithms, binary deliverables, and documentation, is the exclusive intellectual property of the author(s) (the "Licensor"). The Software is licensed, not sold, and remains closed source. No source code license, copyright transfer, or patent grant is provided or implied under this Agreement.
+
+2. GRANT OF LIMITED USE LICENSE
+Subject to the terms and conditions of this Agreement, the Licensor grants you a personal, non-exclusive, non-transferable, revocable, and limited license to download and execute compiled binary distributions of the Software solely for personal, non-commercial evaluation and gaming purposes.
+
+3. RESTRICTIONS
+You may not, and you agree not to allow or assist others to:
+a. Decompile, disassemble, reverse engineer, decrypt, or otherwise attempt to derive the source code of the Software or any part thereof;
+b. Modify, adapt, translate, enhance, or create derivative works based upon the Software;
+c. Rent, lease, lend, sell, resell, sublicense, distribute, host, or commercially exploit the Software in whole or in part without prior written authorization from the Licensor;
+d. Remove, obscure, or alter any copyright notices, trademark notices, or other proprietary legends displayed on or contained within the Software or documentation;
+e. Use the Software for any unauthorized, unlawful, or infringing purpose.
+
+4. REPOSITORY CONTRIBUTIONS & ISSUE REPORTS
+This repository is designated for public issue tracking, compatibility reporting, and user feedback. By submitting bug reports, performance metrics, feature suggestions, or comments to this repository ("Feedback"), you grant the Licensor an irrevocable, perpetual, worldwide, royalty-free license to use, incorporate, adapt, and implement such Feedback into the Software without any obligation of attribution or compensation.
+
+5. THIRD-PARTY TRADEMARKS & NOTICES
+All third-party trademarks, product names, logos, and game titles referenced in connection with the Software remain the property of their respective owners. Their use does not imply any affiliation, sponsorship, or endorsement by such owners.
+
+6. DISCLAIMER OF WARRANTIES
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE LICENSOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, SYSTEM INSTABILITY, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. TERMINATION
+This Agreement is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any of its terms. Upon termination, you must cease all use and destroy all copies of the Software in your possession.
