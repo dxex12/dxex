@@ -9,7 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+
+## [0.3.0] - 2026-10-03
+
 ### Fixed
+- **Particle System Flickering (Smoke, Campfires, Sparks)**:
+  - Implemented multi-slot ring buffering for dynamic vertex and index buffers (`D3DUSAGE_DYNAMIC`).
+  - Advances buffer slice offset on `D3DLOCK_DISCARD` to prevent concurrent GPU/CPU draw overwrites.
+  - Automatically re-binds active IA vertex/index buffer views upon discard invalidation.
 - **Save Game Freeze & Command List Crash**:
   - Added native Texture $\leftrightarrow$ Buffer copies via D3D12 placed footprints in the shared translation layer (`ResourceCopyRegion`).
   - Fixed D3D12 error `ID=854` (dimension limit) and command list fault during `GetRenderTargetData` thumbnail captures.
