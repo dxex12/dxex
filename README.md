@@ -3,10 +3,19 @@
 [![License: Proprietary / Closed Source](https://img.shields.io/badge/License-Proprietary%20%2F%20Closed%20Source-red.svg)](LICENSE)
 [![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com)
 [![Platform: Windows 10 / 11](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-blue.svg)](https://github.com)
-[![Release: v0.2.0](https://img.shields.io/badge/Release-v0.2.0-blue.svg)](CHANGELOG.md)
+[![Release: v0.3.0](https://img.shields.io/badge/Release-v0.3.0-blue.svg)](CHANGELOG.md)
 [![Target API: Direct3D 12](https://img.shields.io/badge/Target%20API-Direct3D%2012-orange.svg)](https://github.com)
+[![Patreon](https://img.shields.io/badge/Patreon-Support%20on%20Patreon-FF424D.svg?logo=patreon&logoColor=white)](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
 
 **DXEX** (standing for **Direct X Extended**) is a high-performance graphics translation layer suite designed to translate legacy and modern Microsoft DirectX graphics APIs directly to **native Direct3D 12 (D3D12)** on Windows. Developed and maintained by **Rohit Kumar**.
+
+---
+
+### 💖 Support the Project on Patreon
+Support ongoing development, game compatibility testing, and bug fixes:  
+👉 **[Join our Patreon & Read the Debut v0.3.0 Post](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
+
+---
 
 > [!IMPORTANT]
 > **Repository Purpose & Licensing Notice**:  
@@ -111,6 +120,7 @@ To help us diagnose and fix issues quickly, please provide:
 
 * **Author**: Developed and maintained by **Rohit Kumar**.
 * **Project**: DXEX (DirectX Extended).
+* **Patreon**: [RohitDev on Patreon](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
 * **Feedback & Support**: Please use the [GitHub Issues](../../issues) tab for bug reports, logs, and compatibility testing feedback.
 
 ---
