@@ -4,7 +4,6 @@
 [![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com)
 [![Platform: Windows 10 / 11](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-blue.svg)](https://github.com)
 [![Target API: Direct3D 12](https://img.shields.io/badge/Target%20API-Direct3D%2012-orange.svg)](https://github.com)
-[![Patreon](https://img.shields.io/badge/Patreon-Support%20on%20Patreon-FF424D.svg?logo=patreon&logoColor=white)](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
 
 <p align="center">
   <img src="dx9&dx11-to-dx12.png" alt="DX9 & DX11 to DX12" width="600" />
