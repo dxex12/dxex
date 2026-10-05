@@ -9,6 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-03
+
+### Added
+- **Triple Buffering (`BufferCount = 3`)**:
+  - Configured hardware DXGI swapchain (`DXGI_SWAP_EFFECT_FLIP_DISCARD`) with triple buffering (`kSwapBufferCount = 3`) in `Presenter::createOrResizeSwapchainLocked` and `wrapSwapchainImagesLocked`.
+  - Smooths frame pacing, prevents presentation stalls against VBlank cycles, and matches high-performance rendering standards.
+
+- **Dedicated Present Frame Thread (`dxex-frame`)**:
+  - Enabled asynchronous presentation thread (`m_frameThread`) using Translation Layer's `WaitForMaximumFrameLatency` for frame latency pacing.
+
+### Fixed
+- **Descriptor Heap Exhaustion (`max=4096`)**:
+  - Expanded CBV/SRV/UAV heap capacity from 4,096 to 65,536 and implemented free-list recycling across CBV/SRV/UAV, RTV, and DSV heaps.
+- **Crash on Exit (`TESV.exe+0x15e05f`)**:
+  - Resolved `0xc0000005` null dereference in `TESIdleForm` destructor on shutdown via startup patch and VEH recovery.
+
 ---
 
 ## [0.3.0] - 2026-10-03
