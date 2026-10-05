@@ -3,7 +3,6 @@
 [![License: Proprietary / Closed Source](https://img.shields.io/badge/License-Proprietary%20%2F%20Closed%20Source-red.svg)](LICENSE)
 [![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com)
 [![Platform: Windows 10 / 11](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-blue.svg)](https://github.com)
-[![Release: v0.3.0](https://img.shields.io/badge/Release-v0.3.0-blue.svg)](CHANGELOG.md)
 [![Target API: Direct3D 12](https://img.shields.io/badge/Target%20API-Direct3D%2012-orange.svg)](https://github.com)
 [![Patreon](https://img.shields.io/badge/Patreon-Support%20on%20Patreon-FF424D.svg?logo=patreon&logoColor=white)](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
 
@@ -16,7 +15,11 @@
 **DXEX** (standing for **Direct X Extended**) is a high-performance graphics translation layer suite designed to translate legacy and modern Microsoft DirectX graphics APIs directly to **native Direct3D 12 (D3D12)** on Windows. Developed and maintained by **Rohit Kumar**.
 
 ---
-
+<p align="center">
+   <a href="https://discord.gg/TyyDD3C7wQ"><img src="https://files.kick.com/images/channel-links/194199/image/conversion/eb3c378e-8c8a-4d42-9396-a2d12b8832fd-image.webp" alt="Join on discord" width="300" height /></a>
+   <a href="https://www.patreon.com/RohitDev"><img src="https://img1.wsimg.com/isteam/ip/e2d51209-09c9-44ec-b3b9-60940e888431/Patreon%20logo%202023.png" alt="Join on Patreon" width="300" height /></a>
+</p>
+![Alt Text](https://example.com)
 ### 💖 Support the Project on Patreon
 Support ongoing development, game compatibility testing, and bug fixes:  
 👉 **[Join our Patreon & Read the Debut v0.3.0 Post](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
@@ -126,7 +129,9 @@ To help us diagnose and fix issues quickly, please provide:
 
 * **Author**: Developed and maintained by **Rohit Kumar**.
 * **Project**: DXEX (DirectX Extended).
-* **Patreon**: [RohitDev on Patreon](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
+* **Discord**: [RohitDev on Discord](https://discord.gg/TyyDD3C7wQ)
+* **Patreon**: [RohitDev on Patreon](https://www.patreon.com/RohitDev)
+* **LinkTree**: [RohitDev on LinkTree](https://linktr.ee/rohitdev1)
 * **Feedback & Support**: Please use the [GitHub Issues](../../issues) tab for bug reports, logs, and compatibility testing feedback.
 
 ---
