@@ -7,6 +7,12 @@
 [![Target API: Direct3D 12](https://img.shields.io/badge/Target%20API-Direct3D%2012-orange.svg)](https://github.com)
 [![Patreon](https://img.shields.io/badge/Patreon-Support%20on%20Patreon-FF424D.svg?logo=patreon&logoColor=white)](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
 
+<p align="center">
+  <img src="dx9&dx11-to-dx12.png" alt="DX9 & DX11 to DX12" width="600" />
+</p>
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rohitdev)
+
 **DXEX** (standing for **Direct X Extended**) is a high-performance graphics translation layer suite designed to translate legacy and modern Microsoft DirectX graphics APIs directly to **native Direct3D 12 (D3D12)** on Windows. Developed and maintained by **Rohit Kumar**.
 
 ---
