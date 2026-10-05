@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Interior Cell Transition GPU Hang (`DXGI_ERROR_DEVICE_HUNG 0x887a0006`)**:
+  - Added frame queue backpressure throttling (`m_frameDrain.wait`) in `Presenter::presentImage` and `Presenter::acquireNextImage`, bounding `m_frameQueue` to triple buffering depth (`< 3`) to prevent CPU runaway and backbuffer overwrite during loading screens.
+  - Added self-copy guards in `dxexSwapchainBlitter::present`, `D3D9SwapChainEx::Present`, and `DxexContext::copyImage` / `copyBuffer` to prevent issuing invalid `ResourceCopy` commands where source and destination point to the identical resource.
+  - Enforced matching `MipLevels`, `DepthOrArraySize`, and `SampleDesc.Count` before invoking whole-resource `ResourceCopy`.
+  - Cleared output/input bindings and tracked context views for swapchain copy destination resources in `dxexSwapchainBlitter::present`.
+  - Added `GetTranslationContext()->TrimDeletedObjects(false)` in `DxexDevice::waitForIdle()` to purge deleted objects upon idle synchronization.
+
 ## [0.4.0] - 2026-10-05
 
 ### Added
