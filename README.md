@@ -19,7 +19,8 @@
    <a href="https://discord.gg/TyyDD3C7wQ"><img src="https://files.kick.com/images/channel-links/194199/image/conversion/eb3c378e-8c8a-4d42-9396-a2d12b8832fd-image.webp" alt="Join on discord" width="300" height /></a>
    <a href="https://www.patreon.com/RohitDev"><img src="https://img1.wsimg.com/isteam/ip/e2d51209-09c9-44ec-b3b9-60940e888431/Patreon%20logo%202023.png" alt="Join on Patreon" width="300" height /></a>
 </p>
-![Alt Text](https://example.com)
+
+
 ### 💖 Support the Project on Patreon
 Support ongoing development, game compatibility testing, and bug fixes:  
 👉 **[Join our Patreon & Read the Debut v0.3.0 Post](https://www.patreon.com/RohitDev/posts/introducing-dxex-171326940?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
