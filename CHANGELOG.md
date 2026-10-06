@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- **Fixed MSAA capability reporting**: 
+  - Corrected quality level calculation for `D3DMULTISAMPLE_NONMASKABLE`, ensuring game launchers and video option menus correctly detect and expose all valid anti-aliasing tiers (2x, 4x, 8x).
+  - Removing log that shows warn on 16x MSAA modes as unavailable on hardware architectures that cap multisampling at 8x (such as modern NVIDIA RTX GPUs)
+
 - **Interior Cell Transition GPU Hang (`DXGI_ERROR_DEVICE_HUNG 0x887a0006`)**:
   - Added frame queue backpressure throttling (`m_frameDrain.wait`) in `Presenter::presentImage` and `Presenter::acquireNextImage`, bounding `m_frameQueue` to triple buffering depth (`< 3`) to prevent CPU runaway and backbuffer overwrite during loading screens.
   - Added self-copy guards in `dxexSwapchainBlitter::present`, `D3D9SwapChainEx::Present`, and `DxexContext::copyImage` / `copyBuffer` to prevent issuing invalid `ResourceCopy` commands where source and destination point to the identical resource.
