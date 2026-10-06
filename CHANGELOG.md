@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
-- **Fixed MSAA capability reporting**: 
+- **Fixed MSAA capability**: 
   - Corrected quality level calculation for `D3DMULTISAMPLE_NONMASKABLE`, ensuring game launchers and video option menus correctly detect and expose all valid anti-aliasing tiers (2x, 4x, 8x).
   - Removing log that shows warn on 16x MSAA modes as unavailable on hardware architectures that cap multisampling at 8x (such as modern NVIDIA RTX GPUs)
 
