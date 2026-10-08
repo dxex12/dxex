@@ -39,7 +39,7 @@ DXEX bridges classic and modern PC titles to the Direct3D 12 runtime with ultra-
 
 ```
 +---------------------------------------------------------------------------------+
-|                       Game Application (x86 / x64)                             |
+|                       Game Application (x86 / x64)                              |
 |               (e.g., Skyrim LE, New Vegas, Fallout 4, GTA V)                    |
 +---------------------------------------------------------------------------------+
                          |                               |
@@ -52,8 +52,8 @@ DXEX bridges classic and modern PC titles to the Direct3D 12 runtime with ultra-
                           v                             v
 +---------------------------------------------------------------------------------+
 |                         DXEX Direct3D 12 Core Engine                            |
-|  - Native DXBC/DXIL pipeline state compilation (zero Vulkan/SPIR-V overhead)    |
-|  - D3D12MA (D3D12 Memory Allocator) high-efficiency VRAM suballocation         |
+|  - Native DXBC/DXIL pipeline state compilation                                  |
+|  - D3D12MA (D3D12 Memory Allocator) high-efficiency VRAM suballocation          |
 |  - Persistent disk pipeline state & shader cache (.dxexcache)                   |
 |  - Native DXGI Presentation (IDXGISwapChain3/4)                                 |
 +---------------------------------------------------------------------------------+
@@ -110,7 +110,7 @@ To help us diagnose and fix issues quickly, please provide:
 
 ## 🚀 Key Architectural Advantages
 
-* **No Intermediate SPIR-V / No Vulkan Overhead**: Unlike translation wrappers that compile to SPIR-V and depend on Vulkan runtime drivers, DXEX targets Microsoft Direct3D 12 natively.
+* **D3D12 Native**: DXEX targets Microsoft Direct3D 12 natively.
 * **D3D12 Memory Allocator (D3D12MA)**: Suballocates memory pools to eliminate driver hitching and VRAM thrashing.
 * **Asynchronous Pipeline Disk Cache (`.dxexcache`)**: Saves converted pipelines to disk to guarantee smooth, stutter-free frame delivery across repeat sessions.
 * **Native DXGI SwapChain Integration**: Employs borderless and exclusive fullscreen presentation directly through system `IDXGISwapChain3` / `IDXGISwapChain4` interfaces.
