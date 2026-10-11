@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Smooths frame pacing, prevents presentation stalls against VBlank cycles, and matches high-performance rendering standards.
 
 - **Dedicated Present Frame Thread (`dxex-frame`)**:
-  - Enabled asynchronous presentation thread (`m_frameThread`) using Translation Layer's `WaitForMaximumFrameLatency` for frame latency pacing.
+  - Enabled asynchronous presentation thread (`m_frameThread`) using  `WaitForMaximumFrameLatency` for frame latency pacing.
 
 ### Fixed
 - **Descriptor Heap Exhaustion (`max=4096`)**:
@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Advances buffer slice offset on `D3DLOCK_DISCARD` to prevent concurrent GPU/CPU draw overwrites.
   - Automatically re-binds active IA vertex/index buffer views upon discard invalidation.
 - **Save Game Freeze & Command List Crash**:
-  - Added native Texture $\leftrightarrow$ Buffer copies via D3D12 placed footprints in the shared translation layer (`ResourceCopyRegion`).
+  - Added native Texture $\leftrightarrow$ Buffer copies via D3D12 placed footprints in the shared Resource Copy Region.
   - Fixed D3D12 error `ID=854` (dimension limit) and command list fault during `GetRenderTargetData` thumbnail captures.
   - Added `D3D12_HEAP_TYPE_READBACK` support for staging buffers and enforced 512-byte subresource placement alignment.
 
@@ -93,7 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2026-09-15
 
 ### Added
-- **Direct3D 9 to Direct3D 12 Translation Layer (`DXEX9`)**:
+- **Direct3D 9 to Direct3D 12 Graphic Translation Api (`DXEX9`)**:
   - Full Direct3D 9 / Direct3D 9Ex API frontend wrapper (`d3d9.dll`).
   - Native DXSO (Direct3D 9 Shader Object) to DXBC (DirectX Byte Code) in-flight converter.
   - Zero SPIR-V / Vulkan runtime dependencies.
