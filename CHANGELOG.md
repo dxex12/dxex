@@ -7,19 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [Unreleased]
+## [0.5.0] - 2026-10-12
+
+### Added
+- **Fallout: New Vegas Support**:
+  - Added support for fallout new vegas
+- **Fast Copy Region**:
+  - Direct GPU copy path in `copyBufferToImage` for aligned buffer-to-texture uploads, bypassing CPU staging overhead.
+- **MSAA Support**:
+  - Native multisample view creation for RTV, DSV, and SRV (`sampleCount > 1`).
+  - Bypassed 1-sample staging tile clears on multisampled resources.
+  - Propagated sample count/quality to PSO keys and enabled Nvidia Alpha-To-Coverage (ATOC).
+- **Buffer Upload Safety**:
+  - Null checks for mapped vertex/index buffer slices in `UploadPerDrawData`.
 
 ### Fixed
-- **Fixed MSAA capability**: 
-  - Corrected quality level calculation for `D3DMULTISAMPLE_NONMASKABLE`, ensuring game launchers and video option menus correctly detect and expose all valid anti-aliasing tiers (2x, 4x, 8x).
-  - Removing log that shows warn on 16x MSAA modes as unavailable on hardware architectures that cap multisampling at 8x (such as modern NVIDIA RTX GPUs)
-
-- **Interior Cell Transition GPU Hang (`DXGI_ERROR_DEVICE_HUNG 0x887a0006`)**:
-  - Added frame queue backpressure throttling (`m_frameDrain.wait`) in `Presenter::presentImage` and `Presenter::acquireNextImage`, bounding `m_frameQueue` to triple buffering depth (`< 3`) to prevent CPU runaway and backbuffer overwrite during loading screens.
-  - Added self-copy guards in `dxexSwapchainBlitter::present`, `D3D9SwapChainEx::Present`, and `DxexContext::copyImage` / `copyBuffer` to prevent issuing invalid `ResourceCopy` commands where source and destination point to the identical resource.
-  - Enforced matching `MipLevels`, `DepthOrArraySize`, and `SampleDesc.Count` before invoking whole-resource `ResourceCopy`.
-  - Cleared output/input bindings and tracked context views for swapchain copy destination resources in `dxexSwapchainBlitter::present`.
-  - Added `GetTranslationContext()->TrimDeletedObjects(false)` in `DxexDevice::waitForIdle()` to purge deleted objects upon idle synchronization.
+- **`dxilconv.dll` Crash (`0xc0000005`)**:
+  - Padded 2D VS texture coordinate outputs to 4D to match downstream 4D PS interpolator reads.
+- **MSAA Capability Enumeration**:
+  - Fixed `D3DMULTISAMPLE_NONMASKABLE` quality level queries for launcher/menu options.
+  - Removed false warning on 16x MSAA modes on hardware capping multisampling at 8x.
+- **Interior Cell Transition GPU Hang (`DXGI_ERROR_DEVICE_HUNG`)**:
+  - Bounded swapchain frame queue depth (< 3) to prevent loading screen overrun.
+  - Added self-copy guards in presentation blitter and copy commands.
+  - Enforced matching subresource descriptors before whole-resource `ResourceCopy`.
+  - Added object trimming on idle wait.
 
 ## [0.4.0] - 2026-10-05
 
