@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+---
+
+## [0.6.0] - 2026-10-18
+
+### Remarks
+- **Nvidia Drivers**: Driver >= 616.56 recommended (Nvidia resolves 32-bit D3D12 driver crash [5725350]).
+- **4GB (LAA) Patch**: Heavy 32-bit games must be 4GB-patched (default 2GB is too tight).
+
+### Added
+- **64-bit D3D9**: Added 64-bit (x64) Direct3D 9 support.
+
+### Performance
+- Increased FPS and smoother frame pacing via better resource handling and adaptive synchronization.
+- Reduced VRAM churn and memory fragmentation across staging buffers.
+
+### Fixed
+- **Double D3D12 Device Creation**: Eliminated redundant device instantiation on startup, cutting VRAM overhead.
+- **Alt-Tab Hang**: Fixed GPU hang and window freeze when Alt-Tabbing or switching focus.
+- **Double Cursor**: Prevented Windows desktop cursor from showing over in-game cursor after Alt-Tab.
+
+---
+
 ## [0.5.0] - 2026-10-12
 
 ### Added
