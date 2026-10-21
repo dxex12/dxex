@@ -7,7 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [Unreleased]
+## [0.7.0] - 2026-10-21
+
+### Added
+- **Hardware Instancing**: Added hardware geometry instancing support with dedicated pipeline state cache keying.
+- **Multi-Planar Subresources**: Added multi-planar format and subresource view routing across texture surfaces.
+- **Verification Suite**: Automated runtime verification suite for dynamic multisample antialiasing and anisotropic filtering.
+- **Texture 3D**: Added texture 3D support for games like Resident Evil 6.
+
+### Performance
+- Increased FPS and smoother frame pacing via faster PSO compilation.
+
+### Fixed
+- **Skyrim LE**: Fixed graphical glitches in outside world sky and floor.
+- **MSAA Presentation**: Fixed multisample backbuffer presentation and resolve hazards during swapchain display.
+- **Dynamic Render States**: Fixed dynamic antialiasing and line smoothing render state updates.
+- **Input Assembler Aliasing**: Fixed vertex input assembler aliasing causing visual sky streaks and mesh distortions.
+- **Anisotropic Filtering**: Fixed anisotropic sampler filter state detection causing blurry distant textures.
+- **Sky Dome Clipping & Fog**: Fixed sky dome geometry clipping and driver-level fog emulation conflicts.
+- **Shader Linkage**: Fixed shader input signature linkage matching and rasterizer state specialization.
+- **Instanced Offsets**: Fixed geometry stream offset alignment during instanced draw calls.
+
+### Improved
+- **Depth Bias Behavior**: Aligned depth bias behavior with legacy Direct3D specifications.
+- **Texture Sampling**: Enhanced texture sampling LOD clamping and descriptor stability.
 
 ---
 
