@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.8.0] - 2026-10-22
+
+### Performance
+- Increased FPS and smoother frame pacing.
+- Reduced CPU overhead and thread synchronization latency.
+- Reduced VRAM usage.
+- Reduced RAM usage.
+
+---
+
 ## [0.7.0] - 2026-10-21
 
 ### Added
