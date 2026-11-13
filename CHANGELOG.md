@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Added `dxex.ini` options: `tearFree`, `latencySleep`, `latencyTolerance`, `hideIntegratedGraphics`, and `deviceFilter`.
-- Added `enableMemoryDefrag`, `zeroMappedMemory`, `enableDebugUtils`, and `trackPipelineLifetime`.
+- Added `enableMemoryDefrag`, `enableD3D12MA`, `zeroMappedMemory`, `enableDebugUtils`, and `trackPipelineLifetime`.
 - Added `enableGraphicsPipelineLibrary`, `hud`, `outputApi`, `presentationModel`, and `colorSpace`.
 
 ### Fixed
