@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Reduced RAM usage.
 - Increased FPS and smoother frame pacing.
 - Reduced CPU overhead.
+- Efficient memory managed for 32-bit VAS protection & stability
 
 ---
 
