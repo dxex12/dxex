@@ -11,8 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **HDR**: enable hdr in monitor settings and set colorSpace = r10g10b10a2_hdr
 
 ### Added
+- Added DirectX 12 Agility SDK for new features.
 - Added `dxex.ini` dxex options: `tearFree`, `latencySleep`, `latencyTolerance`, `hideIntegratedGraphics`, and `deviceFilter`, `enableMemoryDefrag`, `enableD3D12MA`, `zeroMappedMemory`, `enableLogs`, `enableDebugUtils`, `trackPipelineLifetime`, `hud`, `outputApi`, `presentationModel`, `colorSpace` and `maxUploadHeap`.
-
 - Added `dxex.ini` d3d9 options: `speedHack`, `occlusionQueries` and `occlusionQueriesFilter`.
 
 ### Fixed
