@@ -5,18 +5,26 @@ All notable changes to **DXEX** (DirectX Extended) will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.12.0] - 2026-11-13
+## [0.12.0] - 2026-11-16
+
+### Remarks
+- **HDR**: enable hdr in monitor settings and set colorSpace = r10g10b10a2_hdr
 
 ### Added
-- Added `dxex.ini` options: `tearFree`, `latencySleep`, `latencyTolerance`, `hideIntegratedGraphics`, and `deviceFilter`.
-- Added `enableMemoryDefrag`, `enableD3D12MA`, `zeroMappedMemory`, `enableLogs`, and `enableDebugUtils`.
-- Added `trackPipelineLifetime`, `hud`, `outputApi`, `presentationModel`, and `colorSpace`.
+- Added `dxex.ini` dxex options: `tearFree`, `latencySleep`, `latencyTolerance`, `hideIntegratedGraphics`, and `deviceFilter`, `enableMemoryDefrag`, `enableD3D12MA`, `zeroMappedMemory`, `enableLogs`, `enableDebugUtils`, `trackPipelineLifetime`, `hud`, `outputApi`, `presentationModel`, `colorSpace` and `maxUploadHeap`.
+
+- Added `dxex.ini` d3d9 options: `speedHack`, `occlusionQueries` and `occlusionQueriesFilter`.
 
 ### Fixed
 - Fixed game crash on Tab press.
 
+### Visuals
+- HDR colorSpace that can support 1 billion+ colors
+
 ### Performance
 - Reduced RAM usage.
+- Increased FPS and smoother frame pacing.
+- Reduced CPU overhead.
 
 ---
 
